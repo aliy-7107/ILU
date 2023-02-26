@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;500&family=Tilt+Neon&display=swap');
+
+.title-name{
+  font-family: 'Josefin Sans', sans-serif;
+}
+.logo-img{
+  width: 64px;
+  height: 64px;
+  background: url('https://img.icons8.com/external-bearicons-detailed-outline-bearicons/64/null/external-Love-valentine-love-bearicons-detailed-outline-bearicons.png');
+  animation: logoAnime 7.5s infinite;
+}
+
+@keyframes logoAnime{
+  0%{
+    background: url('https://img.icons8.com/external-bearicons-detailed-outline-bearicons/64/null/external-Love-valentine-love-bearicons-detailed-outline-bearicons.png');
+    transform: rotateX(90deg);
+    transition: .5s ease;
+  }
+  50%{
+    background: url('https://img.icons8.com/external-bearicons-gradient-bearicons/64/null/external-Love-valentine-love-bearicons-gradient-bearicons.png');
+    
+  }
+  100%{
+    background: url('https://img.icons8.com/external-bearicons-flat-bearicons/64/null/external-Love-valentine-love-bearicons-flat-bearicons-2.png');
+  }
+}
