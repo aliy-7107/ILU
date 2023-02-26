@@ -95,9 +95,7 @@ export default {
     .register-panel .reg a{
         color: #000;
     }
-    .register-panel .reg a:hover{
-        color:#ffffffbe;
-    }
+    
     .lang{
         background: none;
         border: none;
