@@ -25,3 +25,22 @@
     background: url('https://img.icons8.com/external-bearicons-flat-bearicons/64/null/external-Love-valentine-love-bearicons-flat-bearicons-2.png');
   }
 }
+
+
+
+.main-content{
+  position: relative;
+  top: 80px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+a{
+  color: #000;
+}
+a:hover{  
+  color: #000;
+  transition: all .5s ease;
+}

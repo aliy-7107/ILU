@@ -1,27 +1,29 @@
 <template >
     <header>
-        <div class="container">
-            <div class="logo"><a href="#"> <div class="logo-img"></div></a></div>
-            <div class="header-box">
-                <div class="settings">
-                    <div class="moon item">
-                        <img src="https://img.icons8.com/arcade/24/null/light.png"/>
+        <div class="header">
+            <div class="container">
+                <div class="logo"><a href="#"> <div class="logo-img"></div></a></div>
+                <div class="header-box">
+                    <div class="settings">
+                        <div class="moon item">
+                            <img src="https://img.icons8.com/arcade/24/null/light.png"/>
+                        </div>
+                        <div class="sun item">
+                            <img src="https://img.icons8.com/arcade/24/null/light-on.png"/>
+                        </div>
                     </div>
-                    <div class="sun item">
-                        <img src="https://img.icons8.com/arcade/24/null/light-on.png"/>
+                    <div class="language">
+                        <select class="lang " aria-label=".form-select-lg example">
+                            <option selected>Tilni Tanlang</option>
+                            <option value="1">Uzb</option>
+                            <option value="2">Rus</option>
+                            <option value="3">Eng</option>
+                        </select>
                     </div>
-                </div>
-                <div class="language">
-                    <select class="lang " aria-label=".form-select-lg example">
-                        <option selected>Tilni Tanlang</option>
-                        <option value="1">Uzb</option>
-                        <option value="2">Rus</option>
-                        <option value="3">Eng</option>
-                    </select>
-                </div>
-                <div class="register-panel">
-                    <div class="login reg"><a href="#">Login</a> </div>
-                    <div class="sign-in reg"><a href="#">Register</a> </div>
+                    <div class="register-panel">
+                        <div class="login reg"><a href="#">Login</a> </div>
+                        <div class="sign-in reg"><a href="#">Register</a> </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -35,10 +37,14 @@ export default {
 </script>
 <style scoped>
     header{
+        position: fixed;
         width: 100%;
         height: 80px;
         overflow: hidden;
         background: #9999998c;
+        background: #bcc0c0;
+        
+        z-index: 1;
     }
 
     .container,.header-box{
@@ -104,5 +110,6 @@ export default {
     .lang select option:hover{
         background: #000;
     }
+    
     
 </style>
