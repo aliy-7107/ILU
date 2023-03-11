@@ -131,7 +131,6 @@ export default {
 </script>
 <style scoped>
 .content{
-    
     position: relative;
     float: right;
     width: 80%;
@@ -139,7 +138,7 @@ export default {
     color:#000;
     margin-left: auto;
     margin-right: 0;
-z-index: -1;
+    z-index: 1;
 } 
 .container{
     display: flex;
@@ -150,6 +149,7 @@ z-index: -1;
     position: relative;
     width: 30%;
     margin: 15px;
+    overflow: hidden;
     
 }
 img{
@@ -157,6 +157,7 @@ img{
     height: 350px;
     box-shadow: 1px 1px 7.5px #888;
     border-radius: 15px;
+    transform: scale(105%);
 }
 footer{
     position: relative;
@@ -173,4 +174,34 @@ footer:hover{
     cursor: pointer;
     transition: all .5s ease;
 }
+.information{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    left: -100%;
+    top: -100%;
+    padding:auto 0;
+} 
+
+.row:hover .information{
+    cursor: pointer;
+    opacity: 1;
+    left:0;
+    top:0;
+    transition: all 1s ease;
+    background: #00000091;
+    color: #fff;
+    animation: bgAnime 2s linear;
+}
+
+@keyframes bgAnime {
+    0%{
+        background: #ffff91;
+    }
+    100%{
+        background: #00000091;
+    }
+}
+
 </style>

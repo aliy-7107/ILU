@@ -43,8 +43,7 @@ export default {
         overflow: hidden;
         background: #9999998c;
         background: #bcc0c0;
-        
-        z-index: 1;
+        z-index: 999;
     }
 
     .container,.header-box{
